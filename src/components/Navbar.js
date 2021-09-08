@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import "./Navbar.css";
+import Logo from "./logo.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -42,10 +43,13 @@ function Navbar() {
             >
               CG
             </motion.h>
-            <motion.i 
-             initial={{ opacity: 0, y: -100 }}
-             animate={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
-            className="fas fa-coffee fa-s"></motion.i>
+            <motion.logo
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
+              whileHover={{scale: 1.5}}
+            >
+              <img className="logo" src={Logo} alt="Logo" />
+            </motion.logo>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -57,18 +61,18 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closePhoneMenu}>
+              <Link to="/projects" className="nav-links" onClick={closePhoneMenu}>
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closePhoneMenu}>
+              <Link to="/about" className="nav-links" onClick={closePhoneMenu}>
                 About
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/"
+                to="/hire-me"
                 className="nav-links-mobile"
                 onClick={closePhoneMenu}
               >
@@ -86,8 +90,9 @@ function Navbar() {
               }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 2 } }}
-            >
+            ><Link to="/hire-me">
               HIRE ME
+              </Link>
             </Button>
           )}
         </div>

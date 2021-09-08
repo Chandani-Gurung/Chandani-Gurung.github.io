@@ -26,6 +26,7 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  height: 10px;
 }
 
 .nav-menu {
@@ -64,7 +65,6 @@
 
 .navbar-logo:hover {
   color: #e8c7c8;
-  border-bottom: 4px solid #e8c7c8;
   transition: all 0.2s ease-out;
 }
 
@@ -117,7 +117,7 @@
   }
   .navbar-logo{
       position: absolute;
-      top: 0;
+      top: 1;
       left: 0;
       transform: translate(25%, 50%);
   }
@@ -161,4 +161,10 @@
   Button{
       display: none;
   }
+}
+
+.logo{
+  width:50px; 
+  height:60px;
+  margin-left: 1rem;
 }
