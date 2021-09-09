@@ -1,6 +1,12 @@
-import React from "react";
+import React from 'react';
 import '../../App.css';
 
-export default function HireMe(){
-    return <h1 className="projects">Hire me</h1>
+function HireMe() {
+    return (
+        <div>
+            <h1> Hire me</h1>
+        </div>
+    )
 }
+
+export default HireMe

@@ -16,30 +16,30 @@ function Cards() {
               path="/projects"
               />
               <CardItem 
-              src="images\projectsbyme.png"
-              text="Here are some of the projects I have worked on"
-              label="Projects"
-              path="/projects"
+              src="images\aboutme.jpg"
+              text="Know more about me"
+              label="About"
+              path="/about"
               />
           </ul>
           <ul className="cards__items">
               <CardItem 
-              src="images\projectsbyme.png"
-              text="Here are some of the projects I have worked on"
-              label="Projects"
-              path="/projects"
+              src="images\hireme.png"
+              text="Contact me to create great things with me"
+              label="Hire Me"
+              path="/hire-me"
               />
               <CardItem 
-              src="images\projectsbyme.png"
-              text="Here are some of the projects I have worked on"
-              label="Projects"
-              path="/projects"
+              src="images\hobbies.png"
+              text="Some of my hobbies that I like to indulge on when I'm not coding"
+              label="Hobbies"
+              path="/hobbies"
               />
               <CardItem 
-              src="images\projectsbyme.png"
-              text="Here are some of the projects I have worked on"
-              label="Projects"
-              path="/projects"
+              src="images\socials.jpg"
+              text="Feel free to give me a follow"
+              label="Socials"
+              path="/socials"
               />
           </ul>
         </div>

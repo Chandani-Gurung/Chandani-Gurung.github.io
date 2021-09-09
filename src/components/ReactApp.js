@@ -10,7 +10,6 @@ function ReactApp() {
             </div>
             <p class="site-description">Aspiring Web Application Developer</p>
             <img src="/images/image-1.jpg" />
-            
         </div>
     )
 }
