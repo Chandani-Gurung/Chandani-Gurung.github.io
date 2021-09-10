@@ -25,7 +25,7 @@ function Cards() {
           <ul className="cards__items">
               <CardItem 
               src="images\hireme.png"
-              text="Contact me to create great things with me"
+              text="Let's work together"
               label="Hire Me"
               path="/hire-me"
               />

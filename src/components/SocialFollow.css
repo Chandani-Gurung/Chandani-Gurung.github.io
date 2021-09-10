@@ -9,10 +9,6 @@
     padding: 0 1rem;
   }
   
-  .contact-section-header > h2 {
-    font-size: 2rem;
-  }
-  
   @media (max-width: 28.75em) {
     .contact-section-header > h2 {
       font-size: 4rem;
@@ -21,6 +17,7 @@
   
   .contact-section-header > p {
     font-style: italic;
+    font-size: 2rem;
   }
   
   .contact-links {

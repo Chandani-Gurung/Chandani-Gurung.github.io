@@ -5,7 +5,6 @@ function SocialFollow() {
   return (
     <section id="contact" class="contact-section">
       <div class="contact-section-header">
-        <h2>Let's work together...</h2>
         <p>How do you take your coffee?</p>
       </div>
       <div class="contact-links">
