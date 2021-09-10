@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled, { createGlobalStyle, css } from "styled-components";
 import "../../App.css";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const GlobalStyle = createGlobalStyle`
     html{
@@ -11,9 +12,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: Arial;
         background: #fff;
         height: 100%;
-        margin: 0;
         color: #555;
     }
+    "@media (max-width: 780px)": {
+      display: "block"
 `;
 
 const sharedStyles = css`
@@ -22,7 +24,7 @@ const sharedStyles = css`
     border-radius: 5px;
     border: 1px solid #ddd;
     margin: 10px 0 20px 0;
-    padding: 20px
+    padding: 20px;
     box-sizing: border-box;
     `;
 
@@ -101,14 +103,16 @@ const initialState = {
   collaborate: "",
 };
 
+
 function HireMe() {
+  const formId = "DmYJKquI";
+  const formSparkUrl = `https://submit-form.com/${formId}`;
   const [state, setState] = useState(initialState);
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("submitted!");
-    console.log(state);
+    await postSubmission();
 
     for (let key in state) {
       if (state[key] === "") {
@@ -118,6 +122,18 @@ function HireMe() {
     }
     setError("");
     console.log("Succeededdd!!");
+  };
+  const postSubmission = async () => {
+    const payload = {
+      ...state,
+    };
+    try {
+      const result = await axios.post(formSparkUrl, payload);
+      console.log(result);
+      
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const handleInput = (e) => {
@@ -132,17 +148,20 @@ function HireMe() {
 
   return (
     <>
-      <h2 className="hire-me">Let's work together!</h2>
+      <motion.h2 initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+         className="hire-me">Let's work together!</motion.h2>
       <GlobalStyle />
       <StyledFormWrapper>
         <StyledForm onSubmit={handleSubmit}>
           <h2>
-            Contact Me        
+            Contact Me
             <motion.i
               animate={{ x: 20, y: -20 }}
               transition={{ ease: "easeOut", duration: 2 }}
-              class="fas fa-paper-plane">
-            </motion.i>
+              class="fas fa-paper-plane"
+            ></motion.i>
           </h2>
           <label htmlFor="name">Name</label>
           <StyledInput
@@ -205,11 +224,15 @@ function HireMe() {
             </StyledError>
           )}
           <StyledButton
-          whileHover={{ scale: 1.05, backgroundColor: "#f1a7a9" }}
-          whileTap={{
-            scale: 0.95,
-            backgroundColor: "#f1a7a9",
-            border: "none", }} type="submit">Send Message</StyledButton>
+            whileHover={{ scale: 1.05, backgroundColor: "#f1a7a9" }}
+            whileTap={{
+              scale: 0.95,
+              backgroundColor: "#f1a7a9",
+              border: "none",
+              color: "#000",
+            }}
+            type="submit"
+          >Submit</StyledButton>
         </StyledForm>
       </StyledFormWrapper>
     </>
