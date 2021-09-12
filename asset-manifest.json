@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Chandani-Gurung/static/css/main.878506d8.chunk.css",
+    "main.js": "/Chandani-Gurung/static/js/main.6cbfefbd.chunk.js",
+    "main.js.map": "/Chandani-Gurung/static/js/main.6cbfefbd.chunk.js.map",
+    "runtime-main.js": "/Chandani-Gurung/static/js/runtime-main.744bfc07.js",
+    "runtime-main.js.map": "/Chandani-Gurung/static/js/runtime-main.744bfc07.js.map",
+    "static/js/2.644181e6.chunk.js": "/Chandani-Gurung/static/js/2.644181e6.chunk.js",
+    "static/js/2.644181e6.chunk.js.map": "/Chandani-Gurung/static/js/2.644181e6.chunk.js.map",
+    "index.html": "/Chandani-Gurung/index.html",
+    "static/css/main.878506d8.chunk.css.map": "/Chandani-Gurung/static/css/main.878506d8.chunk.css.map",
+    "static/js/2.644181e6.chunk.js.LICENSE.txt": "/Chandani-Gurung/static/js/2.644181e6.chunk.js.LICENSE.txt",
+    "static/media/logo.7a23576a.png": "/Chandani-Gurung/static/media/logo.7a23576a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.744bfc07.js",
+    "static/js/2.644181e6.chunk.js",
+    "static/css/main.878506d8.chunk.css",
+    "static/js/main.6cbfefbd.chunk.js"
+  ]
+}
