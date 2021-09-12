@@ -20,6 +20,10 @@
     font-size: 2rem;
   }
 
+  .hire-me{
+    font-size: 2rem;
+  }
+
  @media screen and (max-width: 780px) {
    .hire-me{
     text-align: center;
