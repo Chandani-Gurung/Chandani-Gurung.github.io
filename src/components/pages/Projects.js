@@ -36,6 +36,12 @@ const useStyles = makeStyles({
   },
   content:{
     backgroundColor: "#e8c7c8",
+  },
+  contact:{
+    fontSize: "small",
+    textAlign: "center",
+    marginTop: "10px",
+    fontStyle: "italic",
   }
 });
 
@@ -246,6 +252,17 @@ function Projects() {
           </CardContent>
         </Collapse>
       </Card>
+      <div className={classes.contact}>
+      <a
+          id="gh"
+          href="https://github.com/Chandani-Gurung"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <p>You can check out the source codes of my projects here:</p>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </>
   );
 }
