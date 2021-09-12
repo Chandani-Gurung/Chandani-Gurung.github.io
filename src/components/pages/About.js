@@ -6,7 +6,7 @@ import Paper from "@material-ui/core/Paper";
 const useStyles = makeStyles({
   container: {
     textAlign: "center",
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     display: "grid",
     gridTemplateColumns: "2fr 2fr 2fr",
     gridGap: "20px",
@@ -43,6 +43,7 @@ function About() {
   return (
     <>
       <h1 className="about">About</h1>
+
       <div className={classes.container}>
         <Paper elevation={5} className={classes.about}>
           <div>

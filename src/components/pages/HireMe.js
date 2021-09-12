@@ -157,11 +157,6 @@ function HireMe() {
         <StyledForm onSubmit={handleSubmit}>
           <h2>
             Contact Me
-            <motion.i
-              animate={{ x: 20, y: -20 }}
-              transition={{ ease: "easeOut", duration: 2 }}
-              class="fas fa-paper-plane"
-            ></motion.i>
           </h2>
           <label htmlFor="name">Name</label>
           <StyledInput
@@ -232,7 +227,12 @@ function HireMe() {
               color: "#000",
             }}
             type="submit"
-          >Submit</StyledButton>
+          >Submit
+          <motion.i
+              animate={{ x: 15, y: -8 }}
+              transition={{ ease: "easeOut", duration: 2 }}
+              class="fas fa-paper-plane"
+            ></motion.i></StyledButton>
         </StyledForm>
       </StyledFormWrapper>
     </>
