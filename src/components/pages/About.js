@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles({
   container: {
@@ -43,7 +44,14 @@ function About() {
   const classes = useStyles();
   return (
     <>
-      <h1 className="about">About</h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="about"
+      >
+        About
+      </motion.h1>
 
       <div className={classes.container}>
         <Paper elevation={5} className={classes.about}>

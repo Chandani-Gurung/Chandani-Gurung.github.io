@@ -230,7 +230,7 @@ function HireMe() {
           >Submit
           <motion.i
               animate={{ x: 15, y: -8 }}
-              transition={{ ease: "easeOut", duration: 2 }}
+              transition={{ ease: "easeOut", duration: 6 }}
               class="fas fa-paper-plane"
             ></motion.i></StyledButton>
         </StyledForm>

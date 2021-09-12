@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import { makeStyles } from "@material-ui/core";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -20,6 +21,11 @@ const useStyles = makeStyles({
     display: "inline-block",
     margin: "5px 15px",
   },
+  header: {
+    "&:hover": {
+      color: "#e8c7c8",
+    },
+  },
   media: {
     height: 0,
     padding: "40%",
@@ -34,15 +40,15 @@ const useStyles = makeStyles({
   expandOpen: {
     transform: "rotate(180deg)",
   },
-  content:{
+  content: {
     backgroundColor: "#e8c7c8",
   },
-  contact:{
+  contact: {
     fontSize: "small",
     textAlign: "center",
     marginTop: "10px",
     fontStyle: "italic",
-  }
+  },
 });
 
 function Projects() {
@@ -56,7 +62,10 @@ function Projects() {
     <>
       <div className="projects">
         {" "}
-        <h1>Projects </h1>{" "}
+        <motion.h1 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}>Projects </motion.h1>{" "}
       </div>
       <Card className={classes.root}>
         <CardHeader
@@ -110,6 +119,7 @@ function Projects() {
       </Card>
       <Card className={classes.root}>
         <CardHeader
+          className={classes.header}
           avatar={
             <Avatar
               alt="C#-logo"
@@ -117,7 +127,7 @@ function Projects() {
               className={classes.avatar}
             ></Avatar>
           }
-          title="SLU CSLab"
+          title="That Just Happened"
           subheader="November 17, 2020"
         />
         <CardMedia
@@ -158,6 +168,7 @@ function Projects() {
       </Card>
       <Card className={classes.root}>
         <CardHeader
+          className={classes.header}
           avatar={
             <Avatar
               alt="SSMS-logo"
@@ -205,6 +216,7 @@ function Projects() {
       </Card>
       <Card className={classes.root}>
         <CardHeader
+          className={classes.header}
           avatar={
             <Avatar
               alt="KOTLIN-logo"
@@ -225,7 +237,6 @@ function Projects() {
             This is a web application built for a project class in which users
             can generate and send resumes on the spot.
           </Typography>
-          
         </CardContent>
         <CardActions>
           <IconButton
@@ -243,17 +254,17 @@ function Projects() {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-          <Typography paragraph>
-            The application was built using pure KOTLIN. We were given an
-            ooprtunity to dabble with a language we have not used before and we
-            utilized the new up and coming Google's language KOTLIN used for
-            mobile app development.
-          </Typography>
+            <Typography paragraph>
+              The application was built using pure KOTLIN. We were given an
+              ooprtunity to dabble with a language we have not used before and
+              we utilized the new up and coming Google's language KOTLIN used
+              for mobile app development.
+            </Typography>
           </CardContent>
         </Collapse>
       </Card>
       <div className={classes.contact}>
-      <a
+        <a
           id="gh"
           href="https://github.com/Chandani-Gurung"
           target="_blank"
