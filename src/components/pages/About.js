@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     textAlign: "center",
     fontSize: "2rem",
     display: "grid",
+    marginTop: "20px",
     gridTemplateColumns: "2fr 2fr 2fr",
     gridGap: "20px",
     "@media (max-width: 780px)": {

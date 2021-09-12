@@ -4,7 +4,7 @@ import '../../App.css';
 function Socials() {
     return (
         <div>
-            <h1>My social presence</h1>
+            <h1 className="socials">Coming Soon</h1>
         </div>
     )
 }
