@@ -14,7 +14,7 @@ img {
 }
 .site-title{
     font-family: 'didonesque-roman', serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     font-style: normal;
     line-height: 0;
@@ -46,6 +46,8 @@ img {
     }
     body{
         position: relative;
-        width: auto;
+    }
+    img{
+        height: 500px;
     }
 }

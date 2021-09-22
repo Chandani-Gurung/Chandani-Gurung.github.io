@@ -8,11 +8,12 @@ const useStyles = makeStyles({
   container: {
     textAlign: "center",
     display: "grid",
-    marginTop: "50px 10px 50px 10px",
+    marginTop: "50px 10px 50px 50px",
     gridTemplateColumns: "2fr 2fr 2fr",
     gridGap: "10px 10px",
     "@media (max-width: 780px)": {
       display: "block",
+      fontSize: "2px",
     },
   },
   paper: {
@@ -22,20 +23,26 @@ const useStyles = makeStyles({
     justifyContent: "center",
     height: "50%",
     border: "50px solid transparent",
+    
   },
   about: {
-    height: "100%",
-    maxWidth: "600px",
+    height: "75%",
+    maxWidth: "700px",
     marginTop: "70px",
     fontWeight: "bold",
     fontSize: "1.1rem",
     fontFamily: "Nunito",
     padding: "10px",
-    margin: "10px ",
+    margin: "50px 90px",
     cursor: "pointer",
     "&:hover": {
       transform: "scale(1.1)",
       color: "#f1a7a9",
+    },
+    "@media (max-width: 780px)": {
+      display: "block",
+      width: "90%",
+      marginLeft: "20px",
     },
   },
 });

@@ -19,11 +19,11 @@ const useStyles = makeStyles({
     maxWidth: 400,
     justifyContent: "center",
     display: "inline-block",
-    margin: "5px 15px",
-    margin: "120px 50px 120px 50px",
+    margin: "5px 15px 0px 15px",
+    margin: "100px 50px 0px 50px",
     border: "solid 10px transparent",
     position: "relative",
-
+    
   },
   header: {
     "&:hover": {
