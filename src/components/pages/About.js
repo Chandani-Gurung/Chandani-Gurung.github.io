@@ -7,11 +7,10 @@ import { motion } from "framer-motion";
 const useStyles = makeStyles({
   container: {
     textAlign: "center",
-    fontSize: "2rem",
     display: "grid",
-    marginTop: "20px",
+    marginTop: "50px 10px 50px 10px",
     gridTemplateColumns: "2fr 2fr 2fr",
-    gridGap: "20px",
+    gridGap: "10px 10px",
     "@media (max-width: 780px)": {
       display: "block",
     },
@@ -25,10 +24,11 @@ const useStyles = makeStyles({
     border: "50px solid transparent",
   },
   about: {
-    height: "80%",
-    maxWidth: "500px",
+    height: "100%",
+    maxWidth: "600px",
+    marginTop: "70px",
     fontWeight: "bold",
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     fontFamily: "Nunito",
     padding: "10px",
     margin: "10px ",

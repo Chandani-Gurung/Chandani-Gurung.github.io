@@ -1,7 +1,7 @@
 img {
   display: block;
   width: auto;
-  height: 710px;
+  height: 900px;
 }
 .my-container {
   height: 100%;
@@ -14,14 +14,14 @@ img {
 }
 .site-title{
     font-family: 'didonesque-roman', serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     font-style: normal;
     line-height: 0;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
+    margin: 50px 0 auto;
 }
 .site-title:hover{
     cursor: pointer;
@@ -29,8 +29,9 @@ img {
 }
 .site-description{
     font-family: 'didonesque-roman', serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 0;
+    margin-top: 0;
     font-style: normal;
     text-align: center;
 }

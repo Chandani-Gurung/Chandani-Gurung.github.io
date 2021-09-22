@@ -12,7 +12,8 @@ function Navbar() {
   const closePhoneMenu = () => setClick(false);
   const Button = styled(motion.button)`
     padding: 1rem 3rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
     border: 2px solid;
     border-radius: 4px;
     outline: none;
@@ -82,6 +83,7 @@ function Navbar() {
           </ul>
           {button && (
             <Button
+ 
               whileHover={{ scale: 1.05, backgroundColor: "#e8c7c8" }}
               whileTap={{
                 scale: 0.95,

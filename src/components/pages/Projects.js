@@ -16,10 +16,14 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 400,
     justifyContent: "center",
     display: "inline-block",
     margin: "5px 15px",
+    margin: "120px 50px 120px 50px",
+    border: "solid 10px transparent",
+    position: "relative",
+
   },
   header: {
     "&:hover": {
@@ -30,7 +34,9 @@ const useStyles = makeStyles({
     height: 0,
     padding: "40%",
     display: "block",
+    marginTop: "10px",
   },
+  
   expand: {
     transform: "rotate(0deg)",
     marginLeft: "auto",

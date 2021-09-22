@@ -3,6 +3,7 @@ import styled, { createGlobalStyle, css } from "styled-components";
 import "../../App.css";
 import { motion } from "framer-motion";
 import axios from "axios";
+import { faStumbleuponCircle } from "@fortawesome/free-brands-svg-icons";
 
 const GlobalStyle = createGlobalStyle`
     html{
@@ -38,8 +39,10 @@ const StyledFormWrapper = styled.div`
 
 const StyledForm = styled.form`
   width: 100%;
+  font-size: 1.5rem;
   max-width: 700px;
-  padding: 40px;
+  padding: 60px;
+  margin-bottom: 200px;
   background-color: #fff;
   border-radius: 10px;
   box-sizing: border-box;
@@ -64,7 +67,7 @@ const StyledButton = styled(motion.button)`
   display: block;
   background-color: #e8c7c8;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   border: 0;
   border-radius: 5px;
   height: 40px;
@@ -103,20 +106,32 @@ const initialState = {
   collaborate: "",
 };
 
+const serviceMessage = {
+  class: "",
+  text: "",
+};
+
 
 function HireMe() {
   const formId = "DmYJKquI";
   const formSparkUrl = `https://submit-form.com/${formId}`;
   const [state, setState] = useState(initialState);
   const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState();
+  const [message, setMessage] = useState(serviceMessage);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
     await postSubmission();
-
+    setSubmitting(false);
     for (let key in state) {
       if (state[key] === "") {
         setError(`You must provide the ${key}`);
+        setMessage({
+          class: 'bg-red-500',
+          text: 'Sorry, there was a problem. Please try again.',
+      });
         return;
       }
     }
@@ -130,11 +145,14 @@ function HireMe() {
     try {
       const result = await axios.post(formSparkUrl, payload);
       console.log(result);
-      
+      setMessage({
+        class: 'bg-green-500',
+        text: 'Thanks, someone will be in touch',
+      });
     } catch (error) {
-      console.log(error);
-    }
+      
   };
+};
 
   const handleInput = (e) => {
     const inputName = e.currentTarget.name;
@@ -158,6 +176,10 @@ function HireMe() {
           <h2>
             Contact Me
           </h2>
+          {message && (<div className={`my-4 text-white w-full p-4 ${message.class}`}>
+            {message.text}
+            </div>
+          )}
           <label htmlFor="name">Name</label>
           <StyledInput
             type="text"
@@ -219,6 +241,7 @@ function HireMe() {
             </StyledError>
           )}
           <StyledButton
+            disabled={submitting}
             whileHover={{ scale: 1.05, backgroundColor: "#f1a7a9" }}
             whileTap={{
               scale: 0.95,
@@ -226,8 +249,8 @@ function HireMe() {
               border: "none",
               color: "#000",
             }}
-            type="submit"
-          >Submit
+            
+          >{submitting ? 'Submitting...' : 'Submit'}
           <motion.i
               animate={{ x: 15, y: -8 }}
               transition={{ ease: "easeOut", duration: 6 }}
