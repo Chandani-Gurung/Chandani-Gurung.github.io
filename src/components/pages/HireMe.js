@@ -56,6 +56,8 @@ const StyledForm = styled.form`
 const StyledInput = styled.input`
   display: block;
   width: 100%;
+  height: 10px;
+  font-size: 1.5rem;
   ${sharedStyles}
 `;
 
