@@ -129,7 +129,6 @@ function HireMe() {
       if (state[key] === "") {
         setError(`You must provide the ${key}`);
         setMessage({
-          class: 'bg-red-500',
           text: 'Sorry, there was a problem. Please try again.',
       });
         return;
