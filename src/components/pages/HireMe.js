@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
         color: #555;
     }
     "@media (max-width: 780px)": {
-      display: "block"
+      display: "block";
 `;
 
 const sharedStyles = css`
@@ -35,6 +35,10 @@ const StyledFormWrapper = styled.div`
   align-items: center;
   height: 100vh;
   padding: 0 20px;
+  "@media (max-width: 780px)": {
+    display: "block";
+    margin-top: 1px;
+    
 `;
 
 const StyledForm = styled.form`
@@ -52,6 +56,8 @@ const StyledForm = styled.form`
 const StyledInput = styled.input`
   display: block;
   width: 100%;
+  height: 10px;
+  font-size: 1.5rem;
   ${sharedStyles}
 `;
 
