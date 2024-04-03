@@ -16,13 +16,13 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 400,
+        maxWidth: 600,
         justifyContent: "center",
-        display: "inline-block",
-        margin: "5px 15px 0px 15px",
+        display: "center",
+        alignItems: "center",
         margin: "100px 50px 0px 50px",
         border: "solid 10px transparent",
-        position: "relative",
+        position: "center",
 
     },
     header: {
@@ -32,13 +32,13 @@ const useStyles = makeStyles({
     },
     media: {
         height: 0,
-        padding: "40%",
-        display: "block",
-        marginTop: "10px",
+        padding: "20%",
+        display: "center",
+        marginTop: "0px",
     },
 
     expand: {
-        transform: "rotate(0deg)",
+        transform: "rotate(270deg)",
         marginLeft: "auto",
         transition: "auto",
         border: "solid #e8c7c8",
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
     contact: {
         fontSize: "small",
         textAlign: "center",
-        marginTop: "10px",
+        marginTop: "20px",
         fontStyle: "italic",
     },
 });
@@ -75,26 +75,28 @@ function Experience() {
             </div>
             <Card className={classes.root}>
                 <CardHeader
-                    className={classes.header}
                     avatar={
                         <Avatar
-                            alt="React-logo"
-                            src="./logo192.png"
+                            alt="SnapIt-logo"
+                            src="./snapitsolutions_logo - Copy.jpg"
                             className={classes.avatar}
                         ></Avatar>
                     }
-                    title="SLU CSLab"
-                    subheader="November 17, 2020"
+                    title="Junior Software Developer"
+                    subheader="October 18, 2021 - December 31, 2023"
                 />
                 <CardMedia
                     className={classes.media}
-                    image="./images/projects.png"
-                    title="CSLab"
+                    image="./images/snapitsolutions_logo.jpg"
+                    title="SnapIT"
                 />
                 <CardContent className={classes.content}>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        This is a web application built for Dr. Kuo Pao Yang, to help manage
-                        the university's computer science tutoring lab.
+                    <Typography variant="body2" color="textSecondary" component="p" style={{ fontSize: '20px' }}>
+                        Dynamic and skilled Java developer with 2.5 years of hands-on experience seeking to apply my expertise in Java
+programming to contribute effectively to the success of innovative projects.Proficient in designing and implementing
+scalable, high-performance applications using Java and related technologies. Possesses a solid understanding of front-end
+technologies such as HTML, CSS, and JavaScript, with a keen interest in full-stack development. Eager to apply my Java
+skills along with my knowledge of front-end technologies to contribute to dynamic projects.
           </Typography>
                 </CardContent>
                 <CardActions>
@@ -111,15 +113,19 @@ function Experience() {
                 </CardActions>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
                     <CardContent>
-                        <Typography paragraph>Technology used:</Typography>
+                        <Typography paragraph>TECHNICAL SKILLS:</Typography>
                         <Typography paragraph>
-                            For front-end development we used Javascript, HTML, and CSS We
-                            utilized Javascript's React Library.
+                            Programming Languages: Java, JavaScript, HTML, CSS5
             </Typography>
                         <Typography paragraph>
-                            For back-end development we used C# as our language and developed
-              the app in .NET Core. We used SSMS for database management.{" "}
-                        </Typography>
+                            Source and Version Control: Git, GitHub
+            </Typography>
+                        <Typography paragraph>
+                            Tools & Frameworks: Java Spring, Spring Boot, Android SDK, ReactJS, VueJS, IntelliJ, Android Studio, Eclipse, VS Code, ASP.NET Core, Maven, Gradle, Jira, Trello
+            </Typography>
+                        <Typography paragraph>
+                            Databases: MySQL, Oracle, FileZilla, Citrix Workspace, Remote Desktop
+            </Typography>
                     </CardContent>
                 </Collapse>
             </Card>
