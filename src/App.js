@@ -8,6 +8,7 @@ import Projects from './components/pages/Projects';
 import HireMe from './components/pages/HireMe';
 import Hobbies from './components/pages/Hobbies';
 import Socials from './components/pages/Socials';
+import Experience from './components/pages/Experience';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path='/projects' component={Projects}/>
         <Route path='/hire-me' component={HireMe}/>
         <Route path="/hobbies" component={Hobbies}/>
-        <Route path="/socials" component={Socials}/>
+                  <Route path="/socials" component={Socials} />
+                  <Route path="/experience" component={Experience} />
       </Switch>
     </Router>
     </>
