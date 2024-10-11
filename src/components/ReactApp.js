@@ -7,7 +7,7 @@ function ReactApp() {
             <div className="site-title">
             <h1>Chandani Gurung</h1>
             </div>
-            <p class="site-description">Junior Software Engineer</p>
+            <p class="site-description">Software Engineer</p>
             <img src="/images/image1.jpg" />
         </div>
     )
