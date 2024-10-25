@@ -117,8 +117,10 @@ function Projects() {
               utilized Javascript's React Library.
             </Typography>
             <Typography paragraph>
-              For back-end development we used C# as our language and developed
-              the app in .NET Core. We used SSMS for database management.{" "}
+              Developed a web application for Dr. Kuo Pao Yang to manage the university's 
+              computer science tutoring lab. The application utilizes React for a dynamic and 
+              responsive front-end, .NET Core for robust backend functionality, and SQL Server
+              for seamless and efficient database management.
             </Typography>
           </CardContent>
         </Collapse>
@@ -143,8 +145,8 @@ function Projects() {
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" color="textSecondary" component="p">
-            Social web application that allows users to upload their life
-            stories and events instantly, under different subgroups.
+            Social web application that allows users to upload their life stories 
+            and events instantly, under different subgroups.
           </Typography>
         </CardContent>
         <CardActions>
@@ -164,10 +166,14 @@ function Projects() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
             <Typography paragraph>
-              Features like email confirmation, easy navigation on UI, post
-              alerts, and CRUD operations were implemented. This project was
-              built using C#, .NET Core for back-end and SQL server for database
-              management. Frontend was developed in the Angular framework.
+              Developed a social web application that allows users to 
+              instantly share life stories and events. The platform features 
+              emotion-based subgroups, enabling users to connect with peers through 
+              shared experiences. Key functionalities include email confirmation, 
+              intuitive UI navigation, real-time post alerts, and full CRUD 
+              (Create, Read, Update, Delete) operations. The project leveraged 
+              C# and .NET Core for backend development, SQL Server for database management,
+              and Angular for the frontend.
             </Typography>
           </CardContent>
         </Collapse>
@@ -214,8 +220,12 @@ function Projects() {
           <CardContent>
             <Typography paragraph>Technology used:</Typography>
             <Typography paragraph>
-              This project was mainly database oriented where we learned a lot
-              about using SQL server and programming database first.
+              Developed a comprehensive web application for the university to 
+              manage records of both current and alumni international students. 
+              The project centered around advanced database design and implementation, 
+              providing hands-on experience with SQL Server. I was responsible for 
+              building and optimizing the database architecture from the ground up, 
+              ensuring robust data integrity, high scalability, and efficient management of student records.
             </Typography>
           </CardContent>
         </Collapse>
