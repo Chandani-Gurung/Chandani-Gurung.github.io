@@ -16,13 +16,14 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 600,
+        maxWidth: 400,
         justifyContent: "center",
-        display: "center",
-        alignItems: "center",
+        display: "inline-block",
+        margin: "5px 15px 0px 15px",
         margin: "100px 50px 0px 50px",
         border: "solid 10px transparent",
-        position: "center",
+        position: "relative",
+        verticalAlign: "top",
 
     },
     header: {
@@ -92,11 +93,8 @@ function Experience() {
                 />
                 <CardContent className={classes.content}>
                     <Typography variant="body2" color="textSecondary" component="p" style={{ fontSize: '20px' }}>
-                        Dynamic and skilled Java developer with 2.5 years of hands-on experience seeking to apply my expertise in Java
-programming to contribute effectively to the success of innovative projects.Proficient in designing and implementing
-scalable, high-performance applications using Java and related technologies. Possesses a solid understanding of front-end
-technologies such as HTML, CSS, and JavaScript, with a keen interest in full-stack development. Eager to apply my Java
-skills along with my knowledge of front-end technologies to contribute to dynamic projects.
+                        In this role, I played a pivotal role in the enhancement and maintenance of critical medical software for
+                        the client, focusing on code quality, testing, and seamless communication within the Agile framework.
           </Typography>
                 </CardContent>
                 <CardActions>
@@ -131,7 +129,7 @@ skills along with my knowledge of front-end technologies to contribute to dynami
             </Card>
             <div className={classes.contact}>
                 <a
-                    id = "gh"
+                    id="gh"
                     href="https://www.linkedin.com/in/chandani-gurung-394096152/"
                     target="_blank"
                     class="btn contact-details"

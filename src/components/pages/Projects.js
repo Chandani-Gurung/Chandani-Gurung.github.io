@@ -131,9 +131,9 @@ function Projects() {
                     <CardContent>
                         <Typography paragraph>
                             Developed a web application for Dr. Kuo Pao Yang to manage the university's
-                            computer science tutoring lab. The application utilizes React for a dynamic and
-                            responsive front-end, .NET Core for robust backend functionality, and SQL Server
-                            for seamless and efficient database management.
+                            computer science tutoring lab. The application utilizes  <span style={{ color: 'red', fontWeight: 'bold' }}>React</span> for a dynamic and
+                            responsive front-end, <span style={{ color: 'red', fontWeight: 'bold' }}>.NET Core </span> for robust backend functionality, and
+                            <span style={{ color: 'red', fontWeight: 'bold' }}> SQL Server </span> for seamless and efficient database management.
                         </Typography>
                     </CardContent>
                 </Collapse>
@@ -186,9 +186,9 @@ function Projects() {
                             Key functionalities include email confirmation, intuitive
                             UI navigation, real-time post alerts, and full CRUD
                             (Create, Read, Update, Delete) operations. The project
-                            leveraged C# and .NET Core for backend development,
-                            SQL Server for database management, and
-                            Angular for the front end.
+                            leveraged  <span style={{ color: 'red', fontWeight: 'bold' }}> C#</span> and  <span style={{ color: 'red', fontWeight: 'bold' }}> .NET Core</span> for backend development,
+                             <span style={{ color: 'red', fontWeight: 'bold' }}> SQL Server</span> for database management, and
+                             <span style={{ color: 'red', fontWeight: 'bold' }}> Angular </span> for the front end.
                         </Typography>
                     </CardContent>
                 </Collapse>
@@ -237,7 +237,7 @@ function Projects() {
                             Developed a comprehensive web application for the university to
                             manage records of both current and alumni international students.
                             The project centered around advanced database design and implementation,
-                            providing hands-on experience with SQL Server. I was responsible for
+                            providing hands-on experience with  <span style={{ color: 'red', fontWeight: 'bold' }}> SQL Server</span>. I was responsible for
                             building and optimizing the database architecture from the ground up,
                             ensuring robust data integrity, high scalability, and efficient management of student records.
                         </Typography>
@@ -288,8 +288,8 @@ function Projects() {
                             Developed a web application for students to effortlessly generate
                             and send resumes on the spot during career fairs. The project
                             incorporated user-friendly templates and guided users through the
-                            resume creation process. The front-end utilized React for
-                            a smooth user experience, while the backend was powered by Node.js,
+                            resume creation process. The front-end utilized  <span style={{ color: 'red', fontWeight: 'bold' }}> React </span> for
+                            a smooth user experience, while the backend was powered by  <span style={{ color: 'red', fontWeight: 'bold' }}> Node.js </span>,
                             ensuring efficient data handling and real-time updates.
                         </Typography>
                     </CardContent>
